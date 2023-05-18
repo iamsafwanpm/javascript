@@ -1,0 +1,24 @@
+html>
+    <head>
+        <script language="javascript">
+            function numeric(elem,msg)
+            {
+                var number=/^[0-9]+$/;
+                if(elem.value.match(number))
+                {
+                    alert("congrats..you are typed numbers");
+                }
+                else{
+                    alert(msg);
+                    elem.focus();
+                }
+            }
+        </script>
+        </head>
+        <body>
+            <form>
+                phone<input type="text" id="txtno">
+                <input type="button" value="click" onclick="numeric(document.getElementById('txtno'),'number only please')">
+            </form>
+        </body>
+</html>

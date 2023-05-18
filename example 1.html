@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script language="javascript">
+            function dothis()
+            {
+                var a=parseInt(document.getElementById("n1").value);
+                var b=parseInt(document.getElementById("n2").value);
+                var s=a+b;
+                document.write("sum= "+s);
+            }
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return dothis();">
+            first number<input type="text" id="n1"><br>
+            second number<input type="text" id="n2"><br>
+            <input type="submit" value="click">
+        </form>  
+    </body>
+</html>

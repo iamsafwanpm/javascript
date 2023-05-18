@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script language="javascript">
+            function loop_demo()
+            {
+                var a=parseInt(document.getElementById("n1").value);
+                while(a<=10)
+                {
+                    document.write(a+"");
+                    a=a+1;
+                }
+            }
+        </script>
+        </head>
+        <body>
+            <form>
+                <input type="text" id="n1" placeholder="enter low number"><br>
+                <input type="text" id="n1" placeholder="enter high number"><br>
+                <input type="button" value="check number" onclick="loop_demo()">
+            </form>
+        </body>    
+</html>

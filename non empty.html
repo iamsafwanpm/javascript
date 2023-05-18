@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script language="javascript">
+            function empty()
+            {
+                var elem=document.getElementById("txtname").value;
+                var msg="required field";
+                if(elem.length==0)
+                {
+                    alert(msg);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            name<input type="text" id="txtname">
+            <input type="button" value="click" onclick="empty()"> 
+              </form>
+    </body>
+</html>

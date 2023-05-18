@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script language="javascript">
+            function loop_demo()
+            {
+            var i=parseInt(document.getElementById("1").value);
+            var j=parseInt(document.getElementById("2").value);
+            for(i=0;i<5;i++)
+            {
+                document.write(i);
+            }
+            for(j=0;j<4;j++)
+            {
+                document.write(j);
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="1" placeholder="enter low number"><br>
+            <input type="text" id="2" placeholder="enter high number"><br>
+            <input type="button" value="check number" onclick="loop_demo()">
+        </form>
+    </body>
+</html>

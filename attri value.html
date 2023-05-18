@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script language="javascript">
+            function myfun()
+            {
+                var name=document.getElementById("txtname").value;
+                document.getElementById("ptag1").innerHTML="your name is=" +name;
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            namne<input type="text" id="txtname" placeholder="enter name">
+            <input type="button" value="click" onclick="myfun()">
+            <p id="ptag1">no data here</p>
+        </form>
+    </body>
+</html>

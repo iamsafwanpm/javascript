@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script language="javascript">
+            function lengthrestrict(elem,min,max)
+            {
+                var uinput=elem,value;
+                if(uinput.length>=min&& uinput.length <=max)
+                {
+                    alert("value is between"+min+ "and" +max+ "characters");
+                }
+                else
+                {
+                    alert("please enter between" +min+ "and" +max+"characters");
+                    elem.focus();
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            password<input type="text" id="txtno">
+            <input type="button" value="click" onclick="lengthrestrict(document.getElementById('txtno'),6,8)">
+        </form>
+    </body>
+</html>

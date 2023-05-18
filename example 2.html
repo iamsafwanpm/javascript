@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script language="javascript">
+            function add()
+            {
+                var a=parseInt(document.getElementById("n1").value);
+                var b=parseInt(document.getElementById("n2").value);
+                var sum=a+b;
+                document.getElementById("result").value=sum;
+            }
+            function sub()
+            {
+                var a=parseInt(document.getElementById("n1").value);
+                var b=parseInt(document.getElementById("n2").value);
+                var sub=a-b;
+                document.getElementById("result").value=sub;
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            first number<input type="text" id="n1" placeholder="first number"><br>
+            second number<input type="text" id="n2" placeholder="second number"><br>
+            <input type="button" value="sum" onclick="add()">
+            <input type="button" value="subtract" onclick="sub()"><br>
+            <input type="text" id="result">
+
+        </form>
+    </body>
+</html>

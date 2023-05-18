@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script language="javascript">
+            function negative_or_positive()
+            {
+                var a=parseInt(document.getElementById("n1").value);
+                if(a>0)
+                {
+                    alert("posative");
+                } 
+                else{
+                    alert("negative");
+                }
+            }
+                </script>
+                </head>
+                <body>
+                    <form>
+                        <input type="text" id="n1" placeholder="enter number"><br>
+                        <input type="button" value="check number" onclick="negative_or_positive()">
+                    </form>
+                </body>
+                </html>
